@@ -1,0 +1,167 @@
+*{
+    background-color: #EEEEEE;
+    --font--: Arial, serif;
+    --black--: #000000;
+    --black2--:#404040;
+    --shandow--:#F5F5F5;
+    --white--:#FFFFFF;
+    --cold--: #E5E1DA;
+    --green--: #C8D400;
+    --grey--:#cfd2d7;
+    
+}
+
+body{
+   
+    font-family: var(--font--);  
+}
+
+.container {
+    padding: 30px;   /* Cria um espaçamento interno de 40px em todos os lados do elemento. */
+    z-index: 90; /* Posiciona o elemento na frente de outros elementos com um valor de z-index menor. */
+    position: relative;  /* Posiciona o elemento de forma relativa ao seu posicionamento normal no fluxo do documento. */
+    width: 1150px; /* Define a largura máxima do elemento como 700px. */
+    height: 900px; /* Define a altura do elemento como 600px. */
+    margin-left: 50%;   /* Aplica uma margem esquerda de 50%, centralizando o elemento horizontalmente 
+    dentro do seu container ou da viewport. */
+    background-color:var(--white--); /* Define a cor de fundo como branco. */
+    border: 1px solid var(--cold--); /* Adiciona uma borda sólida de 1px ao redor do elemento, usando a variável bege para a cor. */
+    border-radius: 10px;  /* Arredonda os cantos da borda do elemento com um raio de 10px. */
+    box-sizing: border-box; /* Garante que o padding e a borda do elemento sejam incluídos no cálculo da sua largura e altura totais. */
+    transform: translateX(-50%); /* Move o elemento horizontalmente em 50% 
+    da sua própria largura em relação ao seu container posicionado, contribuindo para o seu centramento. */
+    font-family: var(--font--); 
+}
+
+/* FORMULARIO */
+.formulario label{
+    font-family: var(--font--);
+    font-size: 15px;
+
+    
+}
+
+.formulario input, select{
+  
+    height: 30px;
+    width: 75%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid var(--cold--);
+    padding: 0 10px;
+    cursor: pointer;
+   background: var(--white--);
+}
+
+
+
+/* 
+.formulario select{
+    
+} */
+
+
+/* CARDS */
+
+h3{
+    font-family: var(--font--);
+    background: var(--white--);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+hr{
+    margin-bottom: 25px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    width: 245px;
+    height: 200px; 
+    margin: 5px;
+    
+    border: 2px solid var(--cold--);
+    border-radius: 10px;
+    background: var(--white--);
+    display: block;
+
+}
+
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: var(--white--);
+
+    margin-bottom: 35px;
+}
+
+
+
+img{
+    width: 125px;
+    height: 111px;
+   align-content: end;
+    
+    background: var(--white--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+}
+
+label {
+    background: var(--white--);
+    font-family: var(--font--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+
+    display: flex; /* PERMITE A ALTERAÇÃO DO CHECKBOX DE LUGAR */
+    float: right; /* FAZ ELE SE POSICIONAR DO LADO DIREITO */
+    justify-self:end;      /* FAZ COM QUE ELE FIQUE NO FINAL DA PAGINA */
+    justify-content: flex-end;  
+  
+}
+/* 
+input:checked{
+    background-color: var(--green--);
+} */
+
+ 
+/*  BOTÕES */
+
+.clear{
+    width: 356px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--white--);
+    border: 2px solid var(--grey--);
+    font-family: var(--font--);
+    font-size: 19px;
+}
+
+.finish{
+    width: 716px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--black2--);
+    color: var(--white--);
+    border: 2px solid var(--black2--);
+    font-family: var(--font--);
+    font-size: 19px;
+}
+
+.clear, .finish{
+    
+    align-items: center;
+    justify-content: center;
+}
