@@ -15,19 +15,19 @@
 
    <div class="container">
         <div class="formulario">
-            <label for="fullName">Nome:</label>
+            <label class="nome_sobrenome" for="fullName">Nome:</label>
             <input type="text" id="firstname"  placeholder="Ex.: Ana">
 
-            <label for="fullName">Sobrenome:</label>
+            <label class="nome_sobrenome" for="lastName">Sobrenome:</label>
             <input type="text" id="lastname"  placeholder="Ex.: Maria da Silva">
 
-            <label for="fullName">E-mail:</label>
+            <label class="email_number" for="email">E-mail:</label>
             <input type="text" id="email"  placeholder="Ex.:maria.silva.iplace@icloud.com">
 
-            <label for="fullName">DDD + Telefone:</label>
+            <label class="email_number" for="numberPhone">DDD + Telefone:</label>
             <input type="tel" id="number"  placeholder="Ex.:(00) 01234-5678">
 
-            <label for="fullName">Cidade:</label>
+            <label class="cidade_estado" for="city">Cidade:</label>
             <input type="list" id="city" name="city"  placeholder="Ex.: Porto Velho">
                 <datalist id="city">
                     <option value="valor1">Opção 1</option>
@@ -38,7 +38,7 @@
             
                 <label for="state">Estado:</label>
                 
-                    <select id="state" name="state" placeholder="Ex.: Rondônia">
+                    <select class="cidade_estado" id="state" name="state" placeholder="Ex.: Rondônia">
                         <option value="">Selecione uma opção</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -75,73 +75,75 @@
             <hr>
 
           <div class="cont">
-                <div class="card1">
-                    <img src="img/iphone.svg" alt="Iphone">
+                <div class="card">
+                    <img id="iphone" src="img/iphone.svg" alt="Iphone">
                     <label for="card1">Iphone</label>
-                    <input type="checkbox" id="card1" value="card1">
+                    <input type="checkbox" id="checkbox" value="card1">
                    
                 </div>
     
-                <div class="card2">
+                <div class="card">
 
-                    <img src="img/mac.svg" alt="Mac">
+                    <img id="mac" src="img/mac.svg" alt="Mac">
                     <label for="card1">Mac</label>
-                    <input type="checkbox" id="card2" value="card2">
+                    <input type="checkbox" id="checkbox" value="card2">
                     
                 </div>
     
-                <div class="card3">
+                <div class="card">
 
-                    <img src="img/ipad.svg" alt="Ipad">
+                    <img id="ipad" src="img/ipad.svg" alt="Ipad">
                     <label for="card1">Ipad</label>
-                    <input type="checkbox" id="card3" value="card3">
+                    <input type="checkbox" id="checkbox" value="card3">
                    
                 </div>
     
-                <div class="card4">
+                <div class="card">
 
-                    <img src="img/apple-watch.svg" alt="Apple Watch">
+                    <img id="aple-watch" src="img/apple-watch.svg" alt="Apple Watch">
                     <label for="card1">Apple Watch</label>
-                    <input type="checkbox" id="card4" value="card4">
+                    <input type="checkbox" id="checkbox" value="card4">
                    
                 </div>
     
-                <div class="card5">
+                <div class="card">
 
-                    <img src="img/airpod.svg" alt="Airpods">
+                    <img id="airpod" src="img/airpod.svg" alt="Airpods">
                     <label for="card1">Airpods</label>
-                    <input type="checkbox" id="card5" value="card5">
+                    <input type="checkbox" id="checkbox" value="card5">
                    
                 </div>
     
-                <div class="card6">
+                <div class="card">
 
-                    <img src="img/apple-tv.svg" alt="apple tv">
+                    <img id="apple-tv" src="img/apple-tv.svg" alt="apple tv">
                     <label for="card1">Apple TV</label>
-                    <input type="checkbox" id="card6" value="card6">
+                    <input type="checkbox" id="checkbox" value="card6">
                    
                 </div>
     
-                <div class="card7">
+                <div class="card">
 
-                    <img src="img/acessorios.svg" alt="acessorios">
+                    <img id="acessorios" src="img/acessorios.svg" alt="acessorios">
                     <label for="card1">Acessórios</label>
-                    <input type="checkbox" id="card7" value="card7">
+                    <input type="checkbox" id="checkbox" value="card7">
                     
                 </div>
     
-                <div class="card8">
+                <div class="card">
 
-                    <img src="img/iplace.svg" alt="iplace">
+                    <img id="iplace" src="img/iplace.svg" alt="iplace">
                     <label for="card1">Originais Iplace</label>
-                    <input type="checkbox" id="card8" value="card">
+                    <input type="checkbox" id="checkbox" value="card">
                     
                 </div>
             
             </div>
 
+            <div class="botoes">
             <button class="clear"> Limpar dados</button>
             <button class="finish"> Confirmar Cadastro</button>
+            </div>
 
     </div>
 
