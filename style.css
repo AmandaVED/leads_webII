@@ -15,75 +15,112 @@ body{
    background: var(--black--);
     font-family: var(--font--);  
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    padding: 40px;   /* Cria um espaçamento interno de 40px em todos os lados do elemento. */
-    z-index: 90; /* Posiciona o elemento na frente de outros elementos com um valor de z-index menor. */
-    position: relative;  /* Posiciona o elemento de forma relativa ao seu posicionamento normal no fluxo do documento. */
-    width: 100%; /* Define a largura máxima do elemento como 700px. */
-    max-width: 1310px;
-     height: 910px; /* Define a altura do elemento como 600px. */
-    margin-left: 50%;   /* Aplica uma margem esquerda de 50%, centralizando o elemento horizontalmente 
-    dentro do seu container ou da viewport. */
+  
+    width: 95%; /* Define a largura máxima do elemento como 700px. */
+    min-width: 900px;
+   
     background-color:var(--white--); /* Define a cor de fundo como branco. */
     border: 1px solid var(--cold--); /* Adiciona uma borda sólida de 1px ao redor do elemento, usando a variável bege para a cor. */
     border-radius: 10px;  /* Arredonda os cantos da borda do elemento com um raio de 10px. */
-    box-sizing: border-box; /* Garante que o padding e a borda do elemento sejam incluídos no cálculo da sua largura e altura totais. */
-    transform: translateX(-50%); /* Move o elemento horizontalmente em 50% 
-    da sua própria largura em relação ao seu container posicionado, contribuindo para o seu centramento. */
     font-family: var(--font--); 
     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
     
 }
 
 /* FORMULARIO */
 .formulario label{
+    display: flex;
+    align-content: start;
     font-family: var(--font--);
     font-size: 15px;
 
     
 }
 
-.formulario input, select{
-  
-    height: 30px;
-    width: 75%;
-    border-radius: 7px;
-    outline: none;
-    border: 1px solid var(--cold--);
-    padding: 0 10px;
-    cursor: pointer;
+.formulario{
+    
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    width: 95%;
+   
+
    background: var(--white--);
 }
 
 
+select{
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    
+    cursor: pointer;
+   background: var(--white--);
+}
 
-/* CARDS */
+.nome_sobrenome{
+    width: 100%;
+    /* background: var(--white--); */
 
-h3{
+
+}
+
+.email_number{
+    width: 60%;
+    /* background: var(--white--); */
+
+}
+
+.cidade_estado{
+    width: 35%;
+    /* background: var(--white--); */
+
+}
+
+
+/* TEXTO DO CENTRO */
+
+
+.text-center{
+    width: 95%;
+    background: var(--white--);
+}
+
+.text{
     font-family: var(--font--);
     background: var(--white--);
     font-size: 20px;
     font-weight: normal;
 }
 
-hr{
-    margin-bottom: 25px;
-}
+/* CARDS */
 
 .card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-     height: 235px;  
-    
-    
-    display: block;
-    border: 2px solid var(--cold--);
-    border-radius: 10px;
-    background: var(--white--);
+    min-height: 240px ;
+    max-width: 356px;
     
 
-
+    justify-content: center;
+    align-items: center;
+    border: var(--grey--) 1px solid;
+    border-radius: 5px;
+    background: transparent;
+    
+    
 }
 
 /* Galeria de itens */
@@ -91,38 +128,41 @@ hr{
 .cont{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px;
     width: 95% ;
     min-width: 250px;
+
     background: var(--white--);
-    align-items: center;
+
 
 }
 
-
-
-img{
+.img-style{
     width: 100%;
-    max-width: 118px;
-    background: var(--white--);
+    background: transparent;
+    max-width: 150px;
+    max-height: 150px;
+    transition: all 0.3s;
+
+    &:hover{ 
+        scale: 1.1;
+    }
+}
+
+ /* img{
+    width: 75%;
+    max-width: 150px;
+    max-height: 150px;
+   
+    background: var(--white--); 
     
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
 
-}
+}  */
 
-#acessorios{
-    width: 86px;
-}
 
 label {
     background: var(--white--);
     font-family: var(--font--);
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
     text-align: center;
    
 }
@@ -130,44 +170,65 @@ label {
 input {
 
     display: flex; 
-    float: right; 
+   
     position: relative;
-    justify-content: flex-end;
-  
+   
+    line-height: 23px;
+    font-size: 15px;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+    
 }
+
 
 
  
 /*  BOTÕES */
 
 .clear{
-    width: 100%;
+    width: 95%;
     height: 70px; 
-    max-width: 396px;
+  
     border-radius: 20px;
     background-color: var(--white--);
     border: 2px solid var(--grey--);
     font-family: var(--font--);
     font-size: 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .finish{
-    width: 100%;
-     height: 70px;
-     max-width: 779px; 
+    width: 95%;
+    height: 70px;
+     
     border-radius: 20px;
     background-color: var(--black2--);
     color: var(--white--);
     border: 2px solid var(--black2--);
     font-family: var(--font--);
     font-size: 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;     
+    
 }
 
 .botoes{
+
+    width: 95%;
     display: flex;
-    
-    gap: 2%;
+    margin-bottom: 25px;
+    background: transparent;
+    gap: 25px;
+  
     align-items: center;
     justify-content: center;
-    background: var(--white--);
+    
 }

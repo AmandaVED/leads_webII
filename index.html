@@ -15,30 +15,28 @@
 
    <div class="container">
         <div class="formulario">
-            <label class="nome_sobrenome" for="fullName">Nome:</label>
+            <div class="nome_sobrenome">
+                <label  for="fullName">Nome:</label>
             <input type="text" id="firstname"  placeholder="Ex.: Ana">
 
-            <label class="nome_sobrenome" for="lastName">Sobrenome:</label>
+            <label  for="lastName">Sobrenome:</label>
             <input type="text" id="lastname"  placeholder="Ex.: Maria da Silva">
 
-            <label class="email_number" for="email">E-mail:</label>
+            </div>
+
+            <div class="email_number">
+                <label  for="email">E-mail:</label>
             <input type="text" id="email"  placeholder="Ex.:maria.silva.iplace@icloud.com">
 
-            <label class="email_number" for="numberPhone">DDD + Telefone:</label>
+            <label for="numberPhone">DDD + Telefone:</label>
             <input type="tel" id="number"  placeholder="Ex.:(00) 01234-5678">
+            </div>
 
-            <label class="cidade_estado" for="city">Cidade:</label>
-            <input type="list" id="city" name="city"  placeholder="Ex.: Porto Velho">
-                <datalist id="city">
-                    <option value="valor1">Opção 1</option>
-                    <option value="valor2">Opção 2</option>
-                    <option value="valor3">Opção 3</option>
-                </datalist>
-
+            <div class="cidade_estado">
             
                 <label for="state">Estado:</label>
                 
-                    <select class="cidade_estado" id="state" name="state" placeholder="Ex.: Rondônia">
+                    <select  id="state" name="state" placeholder="Ex.: Rondônia">
                         <option value="">Selecione uma opção</option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
@@ -69,14 +67,23 @@
                         <option value="TO">Tocantins</option>
                     </select>
 
+                    <label  for="city">Cidade:</label>
+                    <input type="list" id="city" name="city"  placeholder="Ex.: Porto Velho">
+
+            </div>
+
             </div>
         
-            <h3>Quais ofertas você gostaria de receber?</h3>
-            <hr>
+
+            <div class="text-center">
+                <label class="text">Quais ofertas você gostaria de receber?</label>
+                <hr>
+            </div>
+            
 
           <div class="cont">
                 <div class="card">
-                    <img id="iphone" src="img/iphone.svg" alt="Iphone">
+                    <img class="img-style" id="iphone" src="img/iphone.svg" alt="Iphone">
                     <label for="card1">Iphone</label>
                     <input type="checkbox" id="checkbox" value="card1">
                    
@@ -84,7 +91,7 @@
     
                 <div class="card">
 
-                    <img id="mac" src="img/mac.svg" alt="Mac">
+                    <img class="img-style" id="mac" src="img/mac.svg" alt="Mac">
                     <label for="card1">Mac</label>
                     <input type="checkbox" id="checkbox" value="card2">
                     
@@ -92,7 +99,7 @@
     
                 <div class="card">
 
-                    <img id="ipad" src="img/ipad.svg" alt="Ipad">
+                    <img class="img-style" id="ipad" src="img/ipad.svg" alt="Ipad">
                     <label for="card1">Ipad</label>
                     <input type="checkbox" id="checkbox" value="card3">
                    
@@ -100,7 +107,7 @@
     
                 <div class="card">
 
-                    <img id="aple-watch" src="img/apple-watch.svg" alt="Apple Watch">
+                    <img class="img-style" id="aple-watch" src="img/apple-watch.svg" alt="Apple Watch">
                     <label for="card1">Apple Watch</label>
                     <input type="checkbox" id="checkbox" value="card4">
                    
@@ -108,7 +115,7 @@
     
                 <div class="card">
 
-                    <img id="airpod" src="img/airpod.svg" alt="Airpods">
+                    <img class="img-style" id="airpod" src="img/airpod.svg" alt="Airpods">
                     <label for="card1">Airpods</label>
                     <input type="checkbox" id="checkbox" value="card5">
                    
@@ -116,7 +123,7 @@
     
                 <div class="card">
 
-                    <img id="apple-tv" src="img/apple-tv.svg" alt="apple tv">
+                    <img class="img-style" id="apple-tv" src="img/apple-tv.svg" alt="apple tv">
                     <label for="card1">Apple TV</label>
                     <input type="checkbox" id="checkbox" value="card6">
                    
@@ -124,7 +131,7 @@
     
                 <div class="card">
 
-                    <img id="acessorios" src="img/acessorios.svg" alt="acessorios">
+                    <img class="img-style" id="acessorios" src="img/acessorios.svg" alt="acessorios">
                     <label for="card1">Acessórios</label>
                     <input type="checkbox" id="checkbox" value="card7">
                     
@@ -132,7 +139,7 @@
     
                 <div class="card">
 
-                    <img id="iplace" src="img/iplace.svg" alt="iplace">
+                    <img class="img-style" id="iplace" src="img/iplace.svg" alt="iplace">
                     <label for="card1">Originais Iplace</label>
                     <input type="checkbox" id="checkbox" value="card">
                     
@@ -141,11 +148,12 @@
             </div>
 
             <div class="botoes">
-            <button class="clear"> Limpar dados</button>
-            <button class="finish"> Confirmar Cadastro</button>
-            </div>
-
+                <button class="clear"> Limpar dados</button>
+                <button class="finish"> Confirmar Cadastro</button>
+                </div>
     </div>
+
+   
 
     
 </body>
