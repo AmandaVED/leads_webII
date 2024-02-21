@@ -1,160 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Atividade 01</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 01</title>
 
     <!-- LINKS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="js.js">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="js.js" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formulario">
+        <div class="nome_sobrenome">
+          <div class="name">
+            <label for="fullName">Nome:</label>
+            <input
+              type="text"
+              class="form-input"
+              id="firstname"
+              placeholder="Ex.: Ana"
+            />
+          </div>
 
+          <div class="sobrenome">
+            <label for="lastName">Sobrenome:</label>
+            <input
+              type="text"
+              class="form-input"
+              id="lastname"
+              placeholder="Ex.: Maria da Silva"
+            />
+          </div>
+        </div>
 
-</head>
-<body>
-
-   <div class="container">
-        <div class="formulario">
-            <div class="nome_sobrenome">
-                <label  for="fullName">Nome:</label>
-            <input type="text" id="firstname"  placeholder="Ex.: Ana">
-
-            <label  for="lastName">Sobrenome:</label>
-            <input type="text" id="lastname"  placeholder="Ex.: Maria da Silva">
-
+        <div class="form-contato">
+          <div class="email_cidade">
+            <div class="email">
+              <label for="email">E-mail:</label>
+              <input
+                type="text"
+                class="form-input"
+                id="email"
+                placeholder="Ex.:maria.silva.iplace@icloud.com"
+              />
             </div>
 
-            <div class="email_number">
-                <label  for="email">E-mail:</label>
-            <input type="text" id="email"  placeholder="Ex.:maria.silva.iplace@icloud.com">
+            <div class="cidade">
+              <label for="city">Cidade:</label>
+              <input
+                class="form-input"
+                type="list"
+                id="city"
+                name="city"
+                placeholder="Ex.: Porto Velho"
+              />
+            </div>
+          </div>
 
-            <label for="numberPhone">DDD + Telefone:</label>
-            <input type="tel" id="number"  placeholder="Ex.:(00) 01234-5678">
+          <div class="number_estado">
+            <div class="phone">
+                <label for="numberPhone">DDD + Telefone:</label>
+            <input
+              type="tel"
+              class="form-input"
+              id="number"
+              placeholder="Ex.:(00) 01234-5678"
+            />
             </div>
 
-            <div class="cidade_estado">
-            
+            <div class="estado">
                 <label for="state">Estado:</label>
-                
-                    <select  id="state" name="state" placeholder="Ex.: Rondônia">
-                        <option value="">Selecione uma opção</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-
-                    <label  for="city">Cidade:</label>
-                    <input type="list" id="city" name="city"  placeholder="Ex.: Porto Velho">
-
+            <select
+              id="state"
+              class="form-input"
+              name="state"
+              placeholder="Ex.: Rondônia"
+            >
+              <option value="">Selecione uma opção</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
             </div>
+          </div>
+        </div>
+      </div>
 
-            </div>
-        
+      <div class="text-center">
+        <label class="text">Quais ofertas você gostaria de receber?</label>
+        <hr />
+      </div>
 
-            <div class="text-center">
-                <label class="text">Quais ofertas você gostaria de receber?</label>
-                <hr>
-            </div>
-            
+      <div class="cont">
+        <div class="card">
+          <img
+            class="img-style"
+            id="iphone"
+            src="img/iphone.svg"
+            alt="Iphone"
+          />
+          <label for="card1">Iphone</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card1"
+          />
+        </div>
 
-          <div class="cont">
-                <div class="card">
-                    <img class="img-style" id="iphone" src="img/iphone.svg" alt="Iphone">
-                    <label for="card1">Iphone</label>
-                    <input type="checkbox" id="checkbox" value="card1">
-                   
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img class="img-style" id="mac" src="img/mac.svg" alt="Mac" />
+          <label for="card1">Mac</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card2"
+          />
+        </div>
 
-                    <img class="img-style" id="mac" src="img/mac.svg" alt="Mac">
-                    <label for="card1">Mac</label>
-                    <input type="checkbox" id="checkbox" value="card2">
-                    
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img class="img-style" id="ipad" src="img/ipad.svg" alt="Ipad" />
+          <label for="card1">Ipad</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card3"
+          />
+        </div>
 
-                    <img class="img-style" id="ipad" src="img/ipad.svg" alt="Ipad">
-                    <label for="card1">Ipad</label>
-                    <input type="checkbox" id="checkbox" value="card3">
-                   
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img
+            class="img-style"
+            id="aple-watch"
+            src="img/apple-watch.svg"
+            alt="Apple Watch"
+          />
+          <label for="card1">Apple Watch</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card4"
+          />
+        </div>
 
-                    <img class="img-style" id="aple-watch" src="img/apple-watch.svg" alt="Apple Watch">
-                    <label for="card1">Apple Watch</label>
-                    <input type="checkbox" id="checkbox" value="card4">
-                   
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img
+            class="img-style"
+            id="airpod"
+            src="img/airpod.svg"
+            alt="Airpods"
+          />
+          <label for="card1">Airpods</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card5"
+          />
+        </div>
 
-                    <img class="img-style" id="airpod" src="img/airpod.svg" alt="Airpods">
-                    <label for="card1">Airpods</label>
-                    <input type="checkbox" id="checkbox" value="card5">
-                   
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img
+            class="img-style"
+            id="apple-tv"
+            src="img/apple-tv.svg"
+            alt="apple tv"
+          />
+          <label for="card1">Apple TV</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card6"
+          />
+        </div>
 
-                    <img class="img-style" id="apple-tv" src="img/apple-tv.svg" alt="apple tv">
-                    <label for="card1">Apple TV</label>
-                    <input type="checkbox" id="checkbox" value="card6">
-                   
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img
+            class="img-style"
+            id="acessorios"
+            src="img/acessorios.svg"
+            alt="acessorios"
+          />
+          <label for="card1">Acessórios</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card7"
+          />
+        </div>
 
-                    <img class="img-style" id="acessorios" src="img/acessorios.svg" alt="acessorios">
-                    <label for="card1">Acessórios</label>
-                    <input type="checkbox" id="checkbox" value="card7">
-                    
-                </div>
-    
-                <div class="card">
+        <div class="card">
+          <img
+            class="img-style"
+            id="iplace"
+            src="img/iplace.svg"
+            alt="iplace"
+          />
+          <label for="card1">Originais Iplace</label>
+          <input
+            type="checkbox"
+            class="checkbox-input"
+            id="checkbox"
+            value="card"
+          />
+        </div>
+      </div>
 
-                    <img class="img-style" id="iplace" src="img/iplace.svg" alt="iplace">
-                    <label for="card1">Originais Iplace</label>
-                    <input type="checkbox" id="checkbox" value="card">
-                    
-                </div>
-            
-            </div>
-
-            <div class="botoes">
-                <button class="clear"> Limpar dados</button>
-                <button class="finish"> Confirmar Cadastro</button>
-                </div>
+      <div class="botoes">
+        <button class="clear">Limpar dados</button>
+        <button class="finish">Confirmar Cadastro</button>
+      </div>
     </div>
-
-   
-
-    
-</body>
+  </body>
 </html>
